@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./App.css";
 import React from "react";
 // import { Player } from "video-react";
 import BootStrapDropdown from "react-bootstrap/Dropdown";
@@ -70,8 +70,8 @@ function App() {
               </div>
             </div>
           </BootStrapCard>
+          <h1>TOP FRIENDS</h1>
           <div className="Container">
-            <h1>TOP FRIENDS</h1>
             <BootStrapCard>
               <div className="Jazzy">
                 <img src={Jazzy} alt="Jasmene" />
