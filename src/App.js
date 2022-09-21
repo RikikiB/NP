@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import logo from './logo.svg';
 import './App.css';
 
@@ -22,4 +23,110 @@ function App() {
   );
 }
 
+=======
+import "./App.css";
+import React from "react";
+// import { Player } from "video-react";
+import BootStrapDropdown from "react-bootstrap/Dropdown";
+import BootStrapDropdownButton from "react-bootstrap/DropdownButton";
+import BootStrapCard from "react-bootstrap/Card";
+import BootStrapButton from "react-bootstrap/Button";
+import Jazzy from "./Jazzy.png";
+import Kiki from "./Kiki.png";
+import Top1 from "./Top1.mp4";
+// align
+// "start"|"end"}
+
+function App() {
+  return (
+    <>
+      <div className="Room">
+        <div className="Nav">
+          <ul>FB</ul>
+          <ul>TW</ul>
+          <ul>IG</ul>
+          <ul>SC</ul>
+        </div>
+        <div className="Dropdown">
+          <BootStrapDropdownButton
+            id="dropdown-basic-button"
+            title="Dropdown button"
+          >
+            <div className="DropdownMenu">
+              <BootStrapDropdown.Item href="#/action-1">
+                Home
+              </BootStrapDropdown.Item>
+              <BootStrapDropdown.Item href="#/action-2">
+                Accounts
+              </BootStrapDropdown.Item>
+              <BootStrapDropdown.Item href="#/action-3">
+                Rooms
+              </BootStrapDropdown.Item>
+              <BootStrapDropdown.Item href="#/action-3">
+                Settings
+              </BootStrapDropdown.Item>
+              <BootStrapDropdown.Item href="#/action-3">
+                Help
+              </BootStrapDropdown.Item>
+            </div>
+          </BootStrapDropdownButton>
+        </div>
+        <div className="h-divider">
+          <div className="shadow">Rekishia's Room</div>
+          <div className="Player"></div>
+          <div className="Top">
+            {/* <Player>
+                playsInline={true}
+                src={Top1}
+              </Player> */}
+          </div>
+          <BootStrapCard>
+            <div className="Card">
+              <BootStrapCard.Body>
+                <BootStrapCard.Img
+                  variant="top"
+                  src={Kiki}
+                  alt="Kiki"
+                />
+                <div className="Ki">Kiki</div>
+                <div className="stats1">Followers</div>
+                <p>1.2 Mil</p>
+                <div className="buttons">
+                  <BootStrapButton className="follow">
+                    Follow
+                  </BootStrapButton>
+                  <BootStrapButton className="message">
+                    Message
+                  </BootStrapButton>
+                </div>
+              </BootStrapCard.Body>
+            </div>
+          </BootStrapCard>
+          <h1>TOP FRIENDS</h1>
+          <div className="Container">
+            <BootStrapCard>
+              <div className="Card1">
+                <BootStrapCard.Body>
+                  <BootStrapCard.Img src={Jazzy} alt="Jasmene" />
+                  <div className="Jaz">Jazzy</div>
+                  <div className="stats">Followers</div>
+                  <span>132</span>
+                  <div className="btn">
+                    <BootStrapButton className="follow">
+                      Follow
+                    </BootStrapButton>
+                    <BootStrapButton className="message">
+                      Message
+                    </BootStrapButton>
+                  </div>
+                </BootStrapCard.Body>
+              </div>
+            </BootStrapCard>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+>>>>>>> 35b2662f1947719d79c879d08b3f0a81236a7026
 export default App;
