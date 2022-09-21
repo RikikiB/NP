@@ -58,7 +58,7 @@
 }
 
 /* zz */
-.Kiki {
+.Card {
   font-size: 20px;
   color: rgb(27, 26, 27);
   font-weight: 800;
@@ -125,7 +125,7 @@ p {
   bottom: 15px;
 }
 
-.Jazzy {
+.Card1 {
   font-size: 20px;
   color: rgb(27, 26, 27);
   font-weight: 800;
@@ -189,15 +189,17 @@ span {
 img {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
+  border-radius: 30%;
   object-fit: cover;
   margin-top: -8%;
 }
-img .Jasmene {
+img :nth-child(2) {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  bottom: 20px;
+  left: 10px;
   /* 
    */
 }

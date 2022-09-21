@@ -4,6 +4,7 @@ import React from "react";
 import BootStrapDropdown from "react-bootstrap/Dropdown";
 import BootStrapDropdownButton from "react-bootstrap/DropdownButton";
 import BootStrapCard from "react-bootstrap/Card";
+import BootStrapButton from "react-bootstrap/Button";
 import Jazzy from "./Jazzy.png";
 import Kiki from "./Kiki.png";
 import Top1 from "./Top1.mp4";
@@ -54,38 +55,45 @@ function App() {
               </Player> */}
           </div>
           <BootStrapCard>
-            <div className="Kiki">
-              <img src={Kiki} alt="Kiki" />
-              <div className="Ki">Kiki</div>
-              <div className="stats1">Followers</div>
-              <p>1.2 Mil</p>
-
-              {/* <span></span> 
-                  <span>132</span>
+            <div className="Card">
+              <BootStrapCard.Body>
+                <BootStrapCard.Img
+                  variant="top"
+                  src={Kiki}
+                  alt="Kiki"
+                />
+                <div className="Ki">Kiki</div>
+                <div className="stats1">Followers</div>
+                <p>1.2 Mil</p>
+                <div className="buttons">
+                  <BootStrapButton className="follow">
+                    Follow
+                  </BootStrapButton>
+                  <BootStrapButton className="message">
+                    Message
+                  </BootStrapButton>
                 </div>
-              </div> */}
-              <div className="buttons">
-                <button className="follow">Follow</button>
-                <button className="message">Message</button>
-              </div>
+              </BootStrapCard.Body>
             </div>
           </BootStrapCard>
           <h1>TOP FRIENDS</h1>
           <div className="Container">
             <BootStrapCard>
-              <div className="Jazzy">
-                <img src={Jazzy} alt="Jasmene" />
-                <div className="Jaz">Jazzy</div>
-                <div className="stats">Followers</div>
-                <span>132</span>
-                {/* <span></span> 
+              <div className="Card1">
+                <BootStrapCard.Body>
+                  <BootStrapCard.Img src={Jazzy} alt="Jasmene" />
+                  <div className="Jaz">Jazzy</div>
+                  <div className="stats">Followers</div>
                   <span>132</span>
-                </div>
-              </div> */}
-                <div className="btn">
-                  <button className="follow">Follow</button>
-                  <button className="message">Message</button>
-                </div>
+                  <div className="btn">
+                    <BootStrapButton className="follow">
+                      Follow
+                    </BootStrapButton>
+                    <BootStrapButton className="message">
+                      Message
+                    </BootStrapButton>
+                  </div>
+                </BootStrapCard.Body>
               </div>
             </BootStrapCard>
           </div>
