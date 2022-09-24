@@ -58,7 +58,7 @@
 }
 
 /* zz */
-.Card {
+.Kiki {
   font-size: 20px;
   color: rgb(27, 26, 27);
   font-weight: 800;
@@ -125,7 +125,7 @@ p {
   bottom: 15px;
 }
 
-.Card1 {
+.Jazzy {
   font-size: 20px;
   color: rgb(27, 26, 27);
   font-weight: 800;
@@ -148,7 +148,7 @@ p {
   font-weight: 600;
   display: flex;
   flex-direction: column;
-  left: -4%;
+  right: 0%;
   bottom: -20px;
 }
 .btn .message {
@@ -186,22 +186,20 @@ span {
   right: 103%;
 }
 
-img {
+.card-img {
   width: 120px;
   height: 120px;
   border-radius: 30%;
   object-fit: cover;
   margin-top: -8%;
 }
-img :nth-child(2) {
+.card1-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
   bottom: 20px;
-  left: 10px;
-  /* 
-   */
+  left: 120px;
 }
 
 .stat1 {
@@ -225,11 +223,11 @@ img :nth-child(2) {
   align-items: center;
 } */
 
-.buttons {
+/* .buttons {
   margin-top: 2%;
   position: relative;
   top: -20%;
-}
+} */
 
 /* .btn .follow {
   background-color: #8f4af7;

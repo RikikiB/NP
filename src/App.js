@@ -4,6 +4,7 @@ import React from "react";
 import BootStrapDropdown from "react-bootstrap/Dropdown";
 import BootStrapDropdownButton from "react-bootstrap/DropdownButton";
 import BootStrapCard from "react-bootstrap/Card";
+import BootStrapCard1 from "react-bootstrap/Card";
 import BootStrapButton from "react-bootstrap/Button";
 import Jazzy from "./Jazzy.png";
 import Kiki from "./Kiki.png";
@@ -54,14 +55,10 @@ function App() {
                 src={Top1}
               </Player> */}
           </div>
-          <BootStrapCard>
-            <div className="Card">
+          <BootStrapCard1>
+            <div className="Kiki">
               <BootStrapCard.Body>
-                <BootStrapCard.Img
-                  variant="top"
-                  src={Kiki}
-                  alt="Kiki"
-                />
+                <BootStrapCard.Img src={Kiki} alt="Kiki" />
                 <div className="Ki">Kiki</div>
                 <div className="stats1">Followers</div>
                 <p>1.2 Mil</p>
@@ -75,13 +72,17 @@ function App() {
                 </div>
               </BootStrapCard.Body>
             </div>
-          </BootStrapCard>
+          </BootStrapCard1>
           <h1>TOP FRIENDS</h1>
           <div className="Container">
-            <BootStrapCard>
-              <div className="Card1">
+            <BootStrapCard1>
+              <div className="Jazzy">
                 <BootStrapCard.Body>
-                  <BootStrapCard.Img src={Jazzy} alt="Jasmene" />
+                  <BootStrapCard.Img
+                    right="50px"
+                    src={Jazzy}
+                    alt="Jasmene"
+                  />
                   <div className="Jaz">Jazzy</div>
                   <div className="stats">Followers</div>
                   <span>132</span>
@@ -95,7 +96,7 @@ function App() {
                   </div>
                 </BootStrapCard.Body>
               </div>
-            </BootStrapCard>
+            </BootStrapCard1>
           </div>
         </div>
       </div>
