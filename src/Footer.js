@@ -1,11 +1,18 @@
+import React from 'react';
+import  './Footer.css';
+
+
 function Footer(){
     return (
-        <div className="Footer">
+        <div className='Footer'>
             <ul>HOME</ul>
             <ul>VIDEO</ul>
             <ul>CHAT</ul>
             <ul>FRIENDS</ul>
+            </div>
+            
 
-        </div>
     )
-}
+    }
+
+export default Footer;

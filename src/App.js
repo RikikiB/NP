@@ -1,5 +1,10 @@
 import "./App.css";
+import Footer from "./Footer.js";
 import React from "react";
+import {
+  Route,
+  BrowserRouter as Router
+} from "react-router-dom";
 // import { Player } from "video-react";
 import BootStrapDropdown from "react-bootstrap/Dropdown";
 import BootStrapDropdownButton from "react-bootstrap/DropdownButton";
@@ -9,6 +14,8 @@ import BootStrapButton from "react-bootstrap/Button";
 import Jazzy from "./Jazzy.png";
 import Kiki from "./Kiki.png";
 import Top1 from "./Top1.mp4";
+import Kiki1 from "./Ki2.png"
+// import { Footer } from "react-bootstrap/lib/Modal";
 // align
 // "start"|"end"}
 
@@ -16,6 +23,7 @@ function App() {
   return (
     <>
       <div className="Room">
+        <Router>
         <div className="Nav">
           <ul>FB</ul>
           <ul>TW</ul>
@@ -49,11 +57,10 @@ function App() {
         <div className="h-divider">
           <div className="shadow">Rekishia's Room</div>
           <div className="Player"></div>
-          <div className="Top">
-            {/* <Player>
-                playsInline={true}
-                src={Top1}
-              </Player> */}
+          <div className="Top1">
+            Top Photo
+            <img src={Kiki1}>
+              </img>
           </div>
           <BootStrapCard1>
             <div className="Kiki">
@@ -99,7 +106,9 @@ function App() {
             </BootStrapCard1>
           </div>
         </div>
-      </div>
+        <Footer/>
+        </Router>
+           </div>
     </>
   );
 }
