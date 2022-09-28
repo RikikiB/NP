@@ -10,7 +10,7 @@ import BootStrapCard1 from "react-bootstrap/Card";
 import BootStrapButton from "react-bootstrap/Button";
 import Jazzy from "./Jazzy.png";
 import Kiki from "./Kiki.png";
-import Top1 from "./Top1.mp4";
+import Video from "./Video.js";
 import Kiki1 from "./Ki2.png";
 // import { Footer } from "react-bootstrap/lib/Modal";
 // align
@@ -53,7 +53,9 @@ function App() {
           </div>
           <div className="h-divider">
             <div className="shadow">Rekishia's Room</div>
-            <div className="Player"></div>
+            <div className="Player">
+              <Video />
+            </div>
             <div className="Top1">
               Top Photo
               <img src={Kiki1}></img>
