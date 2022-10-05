@@ -10,11 +10,20 @@ import BootStrapCard1 from "react-bootstrap/Card";
 import BootStrapButton from "react-bootstrap/Button";
 import Jazzy from "./Jazzy.png";
 import Kiki from "./Kiki.png";
-import Video from "./Video.js";
+import {
+  BsFacebook,
+  BsTwitter,
+  BsInstagram,
+  BsSnapchat,
+} from "react-icons/bs";
+// import Video from "./Components/Video.js";
 import Kiki1 from "./Ki2.png";
 // import { Footer } from "react-bootstrap/lib/Modal";
 // align
 // "start"|"end"}
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faFacebook } from "@fortawesome/free-solid-svg-icons";
+// import { library } from "@font-awesome/font-awesome-svg-core";
 
 function App() {
   return (
@@ -22,10 +31,18 @@ function App() {
       <div className="Room">
         <Router>
           <div className="Nav">
-            <ul>FB</ul>
-            <ul>TW</ul>
-            <ul>IG</ul>
-            <ul>SC</ul>
+            <ul>
+              <BsFacebook />
+            </ul>
+            <ul>
+              <BsTwitter />
+            </ul>
+            <ul>
+              <BsInstagram />
+            </ul>
+            <ul>
+              <BsSnapchat />
+            </ul>
           </div>
           <div className="Dropdown">
             <BootStrapDropdownButton
@@ -53,9 +70,7 @@ function App() {
           </div>
           <div className="h-divider">
             <div className="shadow">Rekishia's Room</div>
-            <div className="Player">
-              <Video />
-            </div>
+            <div className="Player">{/* <Video /> */}</div>
             <div className="Top1">
               Top Photo
               <img src={Kiki1}></img>

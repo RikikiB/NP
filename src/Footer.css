@@ -1,6 +1,8 @@
-.Footer{
-    border: 20% color black; 
-    display:flex;
-    justify-content: center;
-    font-size: 40px;
+.Footer {
+  /* border: 20% color black; */
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  /* margin-right: 30px; */
+  background-color: #8f4af7;
 }

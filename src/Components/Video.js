@@ -12,5 +12,6 @@ class Video extends Component  {
     </div>
   );
 }
+}
 
 export default Video;
