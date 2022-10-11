@@ -1,6 +1,6 @@
 import "./App.css";
 import Footer from "./Footer.js";
-import React from "react";
+import React, { useState } from "react";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 // import { Player } from "video-react";
 import BootStrapDropdown from "react-bootstrap/Dropdown";
@@ -18,6 +18,8 @@ import {
 } from "react-icons/bs";
 // import Video from "./Components/Video.js";
 import Kiki1 from "./Ki2.png";
+const [fbLogin, setFbLogin] = useState();
+
 // import { Footer } from "react-bootstrap/lib/Modal";
 // align
 // "start"|"end"}
@@ -55,6 +57,10 @@ function App() {
                 </BootStrapDropdown.Item>
                 <BootStrapDropdown.Item href="#/action-2">
                   Accounts
+                  <BootStrapButton onClick={() => setFbLogin()}>
+                    Login
+                  </BootStrapButton>
+                  Log Into Accounts
                 </BootStrapDropdown.Item>
                 <BootStrapDropdown.Item href="#/action-3">
                   Rooms
