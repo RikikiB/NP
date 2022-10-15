@@ -16,9 +16,9 @@ import {
   BsInstagram,
   BsSnapchat,
 } from "react-icons/bs";
-// import Video from "./Components/Video.js";
+import Video from "./Components/Video.js";
 import Kiki1 from "./Ki2.png";
-const [fbLogin, setFbLogin] = useState();
+// const [fbLogin, setFbLogin] = useState();
 
 // import { Footer } from "react-bootstrap/lib/Modal";
 // align
@@ -57,10 +57,7 @@ function App() {
                 </BootStrapDropdown.Item>
                 <BootStrapDropdown.Item href="#/action-2">
                   Accounts
-                  <BootStrapButton onClick={() => setFbLogin()}>
-                    Login
-                  </BootStrapButton>
-                  Log Into Accounts
+                  <BootStrapButton>Login</BootStrapButton>
                 </BootStrapDropdown.Item>
                 <BootStrapDropdown.Item href="#/action-3">
                   Rooms
@@ -76,7 +73,9 @@ function App() {
           </div>
           <div className="h-divider">
             <div className="shadow">Rekishia's Room</div>
-            <div className="Player">{/* <Video /> */}</div>
+            <div className="Video">
+              <Video />
+            </div>
             <div className="Top1">
               Top Photo
               <img src={Kiki1}></img>
@@ -111,7 +110,7 @@ function App() {
                     />
                     <div className="Jaz">Jazzy</div>
                     <div className="stats">Followers</div>
-                    <span>132</span>
+                    <span>1,871</span>
                     <div className="btn">
                       <BootStrapButton className="follow">
                         Follow

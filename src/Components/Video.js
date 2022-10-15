@@ -1,17 +1,13 @@
-import React, {Component} from "react";
-import { ReactVideo } from "reactjs-media";
-import Vid from "Vid.mp4";
-import Audio from "./Audio.js";
+import React from "react";
+import Vid from "./Vid.mp4";
+import "./Video.css";
 
-class Video extends Component  {
-  render() {
+function Video() {
   return (
     <div className="Video">
-      <ReactVideo src={Vid} autoplay={true} />
-      <Audio />
+      <iframe src={Vid} title="Top Vid" />
     </div>
   );
-}
 }
 
 export default Video;
