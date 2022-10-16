@@ -84,12 +84,28 @@ img {
   height: 120px;
   border-radius: 30%;
   object-fit: cover;
-  margin-top: 1%;
+  margin-top: -41.6%;
 }
 
 .Top1 {
   margin-left: 80%;
-  margin-bottom: 55.5%;
+  margin-bottom: 69.8%;
+  object-fit: cover;
+}
+.card-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 30%;
+  object-fit: cover;
+  margin-top: -4%;
+}
+.card1-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  bottom: 20px;
+  left: 120px;
 }
 
 .Kiki {
@@ -218,22 +234,6 @@ span {
   position: absolute;
   top: 47.4%;
   right: 95.5%;
-}
-
-.card-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 30%;
-  object-fit: cover;
-  margin-top: -8%;
-}
-.card1-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  bottom: 20px;
-  left: 120px;
 }
 
 .stat1 {
