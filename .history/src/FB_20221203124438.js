@@ -14,9 +14,3 @@ function checkLoginState() {
   }
 }
   
-function FB(
-  authResponse,
-  statusChangeCallback,
-  errorCallback
-) {
-}
